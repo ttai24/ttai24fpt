@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<title>Pizza</title>
+
+
+</head>
+<style>
+	body {
+		background-color: black;
+		color: white;
+		font-family: 'Times New Roman', Times, serif;
+
+	}
+</style>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container justify-content-center">
+			<a class="navbar-brand" href="#">
+				<h3>Pizza House</h3>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+					<li class="nav-item me-2">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item me-2">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<li class="nav-item me-2">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<form class="form-inline d-flex align-items-center">
+					<div class="input-group">
+						<input class="form-control" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-danger d-flex justify-content-center align-items-center" type="submit">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-search" viewBox="0 0 16 16">
+								<path
+									d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+				aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="active"
+				aria-current="true" aria-label="Slide 5"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./images/pizza1.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Be Tai</h1>
+					<h5>Vị ngon từ biên cương, hương vị đỉnh cao của pizza</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./images/pizza2.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Be Tai </h1>
+					<h5>Chuẩn vị Việt, phong cách Ý</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./images/pizza3.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Be Tai</h1>
+					<h5>Thưởng thức ẩm thực cùng bạn bè</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./images/pizza4.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Be Tai</h1>
+					<h5>Chất lượng hàng đầu giá cả phải chăng</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./images/pizza5.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Be Tai</h1>
+					<h5>Ngon miệng, dễ gần</h5>
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+
+			<div class="row mt-4">
+
+				<h2 class="title hidden-mobile">Our Menu</h2>
+
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-md-3">
+					<div class="card" style="width: 16rem;">
+						<span class="badge rounded-0 text-dark position-absolute top-0 start-0 w-60 h-60 fs-6 pl-2"
+							style="background-color: gold">SALE</span>
+						<img src="./images/menu1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Margherita Pizza</h5>
+							<p><del>$40.00</del><span style="color: rgb(210, 162, 30)">$26.00</span></p>
+							<div class="card text-center">
+								<a href="#" class="btn btn-dark">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="card" style="width: 16rem;">
+						<img src="./images/menu2.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Mushroom Pizza</h5>
+							<p>$25.00</p>
+							<div class="card text-center">
+								<a href="#" class="btn btn-dark">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="card" style="width: 16rem;">
+						<span class="badge rounded-0 text-dark position-absolute top-0 start-0 w-60 h-60 fs-6 pl-2"
+							style="background-color: gold;">NEW</span>
+						<img src="./images/menu3.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Hawaiian Pizza</h5>
+							<p>$30.00</p>
+							<div class="card text-center">
+								<a href="#" class="btn btn-dark">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="card" style="width: 16rem;">
+						<span class="badge rounded-0 text-dark position-absolute top-0 start-0 w-60 h-60 fs-6 pl-2"
+							style="background-color: gold">SALE</span>
+						<img src="./images/menu4.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Pesto Pizza</h5>
+							<p><del>$40.00</del><span style="color: rgb(210, 138, 30)">$30.00</span></p>
+							<div class="card text-center">
+								<a href="#" class="btn btn-dark">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row mt-4">
+					<h2 class="title hidden-mobile text-center">Book Your Table</h2>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" placeholder="Your Name*">
+								</div>
+							</form>
+						</div>
+						<div class="col-md-4">
+							<form>
+								<div class="form-group">
+									<input type="email" class="form-control" id="email" placeholder="Your Email*">
+								</div>
+							</form>
+						</div>
+						<div class="col-md-4">
+							<input type="service" class="form-control" id="service" placeholder="Select a Service">
+							<option value="" disabled></option> <!-- Spacer -->
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-4">
+					<div class="col-md-12">
+						<textarea class="form-control" id="message" rows="5"
+							placeholder="Please write your command"></textarea>
+						<option value="" disabled></option> <!-- Spacer -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<a action="#">
+
+					<button type="button" class="btn btn-warning">Send message</button>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/577bfede9d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
