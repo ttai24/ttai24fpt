@@ -1,0 +1,16 @@
+/* App.css */
+
+body {
+background-color: white;
+color: black;
+}
+
+.app-title {
+color: #ffffff;
+margin-top: 2rem;
+}
+.table-custom {
+
+  border: 2px solid #f0f0f0;
+  background-color: #f8f8f8;
+}
